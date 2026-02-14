@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Contact form</title>
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div id="success-toast" class="success-toast">
+  <strong>Message Sent!</strong>
+  <span>Thanks for completing the form. We'll be in touch soon!</span>
+</div>
+
+ <div class="container">
+  <h2 class="main-heading">Contact Us</h2>
+  
+
+  <form class="form-grid" novalidate>
+    
+    <div class="name-row">
+      <div class="field">
+        <label for="first-name">First Name *</label>
+        <input id="first-name" type="text" class="form-input" required>
+        <p class="error-msg" id="first-name-error">This field is required</p>
+      </div>
+
+      <div class="field">
+        <label for="last-name">Last Name *</label>
+        <input id="last-name" type="text" class="form-input" required>
+        <p class="error-msg" id="last-name-error">This field is required</p>
+      </div>
+    </div>
+
+    <label for="email-address">Email Address *</label>
+    <input id="email-address" type="email" class="form-input" required>
+    <p class="error-msg" id="email-error">Please enter a valid email address</p>
+    
+    <span class="field-name">Query Type *</span>
+    <div class="radio-group">
+      <label>
+        <input class="form-input" type="radio" name="query" value="general" required>
+        General Enquiry
+      </label>
+      <label>
+        <input class="form-input" type="radio" name="query" value="support">
+        Support Request
+      </label>
+      
+    </div>
+    <p class="error-msg" id="query-type-error">Please select a query type</p>
+
+    <label for="message">Message *</label>
+    <textarea class="form-input" id="message" rows="4" required></textarea>
+    <p class="error-msg" id="message-error">This field is required</p>
+
+
+    <div class="consent-group">
+      <label>
+        <input type="checkbox" required>
+        I consent to being contacted by the team
+      </label>
+    </div>
+
+    <button  type="submit" class="submit-btn">Submit</button>
+  </form>
+</div>
+
+</body>
+<script src="app.js"></script>
+</html>
