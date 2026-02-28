@@ -2,7 +2,6 @@ const firstName = document.querySelector('#first-name');
 const lastName = document.querySelector('#last-name');
 const email = document.querySelector('#email-address');
 const message = document.querySelector('#message');
-const submitBtn = document.querySelector('.submit-btn');
 const form = document.querySelector('form');
 
 function firstNameIsValid() {
